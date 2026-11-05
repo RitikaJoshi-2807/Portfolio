@@ -1,0 +1,264 @@
+
+.education-card {
+  background: #ffffff;
+  border: 1px solid #e0dfdc;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.education-card:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+/* Education Heading */
+
+.education-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.education-heading h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #191919;
+  margin: 0;
+}
+
+.education-heading-icon {
+  font-size: 22px;
+}
+
+/* Education List */
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Individual Education Item */
+
+.education-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 0 0 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8;
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateX(4px);
+}
+
+/* Remove divider from last education entry */
+
+.education-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Education Logo */
+
+.education-logo {
+  min-width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: #eaf2fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover .education-logo {
+  transform: scale(1.08);
+}
+
+/* Education Details */
+
+.education-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.education-details h3 {
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.5;
+  color: #191919;
+  margin: 0 0 5px;
+}
+
+.education-university {
+  font-size: 13px;
+  color: #555555;
+  margin: 0 0 9px;
+  line-height: 1.5;
+}
+
+.education-degree {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0 0 5px;
+}
+
+.education-duration {
+  font-size: 13px;
+  color: #777777;
+  margin: 0 0 20px;
+}
+
+/* Academic Performance / CGPA */
+
+.cgpa-container {
+  background: #f7f9fc;
+  border: 1px solid #e5ebf2;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 22px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.cgpa-container:hover {
+  background: #f0f5fb;
+  border-color: #cbdced;
+}
+
+.cgpa-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.cgpa-label {
+  font-size: 13px;
+  color: #555555;
+  font-weight: 500;
+}
+
+.cgpa-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a66c2;
+}
+
+.cgpa-value small {
+  font-size: 12px;
+  color: #777777;
+  font-weight: 500;
+}
+
+/* Progress Bar */
+
+.cgpa-progress {
+  height: 7px;
+  background: #dce5ef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cgpa-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0a66c2, #58a6e7);
+  border-radius: 10px;
+  animation: cgpaLoad 1.2s ease-out;
+  transition: width 1s ease-in-out;
+}
+
+@keyframes cgpaLoad {
+  from {
+    width: 0;
+  }
+}
+
+/* Coursework / Subjects */
+
+.coursework-section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0 12px;
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.coursework-tags span {
+  background: #f0f3f6;
+  color: #444444;
+  padding: 7px 11px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.coursework-tags span:hover {
+  background: #dceaf7;
+  color: #0a66c2;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+  .education-card {
+    padding: 18px;
+  }
+
+  .education-heading {
+    margin-bottom: 20px;
+  }
+
+  .education-item {
+    gap: 12px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+
+  .education-logo {
+    min-width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .education-details h3 {
+    font-size: 15px;
+  }
+
+  .education-university {
+    font-size: 12px;
+  }
+
+  .education-degree {
+    font-size: 13px;
+  }
+
+  .cgpa-container {
+    padding: 11px;
+  }
+
+  .coursework-tags {
+    gap: 7px;
+  }
+
+  .coursework-tags span {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+}

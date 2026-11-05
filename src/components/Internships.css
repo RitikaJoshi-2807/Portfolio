@@ -1,0 +1,130 @@
+
+.internships-card {
+  background: #ffffff;
+  border: 1px solid #e0dfdc;
+  border-radius: 10px;
+  padding: 22px;
+  margin-bottom: 16px;
+}
+
+.internships-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #191919;
+  margin-bottom: 22px;
+}
+
+.internship-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.internship-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.internship-logo {
+  min-width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.coloredcow-logo {
+  background: #f2e9ed;
+  color: #a52c57;
+}
+
+.isro-logo {
+  background: #e8eef9;
+  color: #24589b;
+  font-size: 13px;
+}
+
+.internship-details {
+  flex: 1;
+}
+
+.internship-details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #191919;
+  margin: 0 0 5px;
+}
+
+.internship-details h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0 0 5px;
+}
+
+.internship-duration {
+  font-size: 13px;
+  color: #777777;
+  margin: 0 0 12px;
+}
+
+.internship-description {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #555555;
+  margin-bottom: 14px;
+  white-space: pre-line;
+}
+
+.internship-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.internship-tags span {
+  background: #eef3f8;
+  color: #315b80;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.internship-divider {
+  height: 1px;
+  background: #e8e8e8;
+  margin: 0 0 0 68px;
+}
+
+@media (max-width: 600px) {
+  .internships-card {
+    padding: 17px;
+  }
+
+  .internship-item {
+    gap: 12px;
+  }
+
+  .internship-logo {
+    min-width: 42px;
+    height: 42px;
+    font-size: 12px;
+  }
+
+  .internship-details h3 {
+    font-size: 15px;
+  }
+
+  .internship-description {
+    font-size: 13px;
+  }
+
+  .internship-divider {
+    margin-left: 54px;
+  }
+}
